@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:inputType="text"
+        android:hint="Enter You Name"
+        android:textSize="20dp"/>
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        android:id="@+id/ckin"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:text="Check In"
+        android:textSize="20dp"/>
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        android:id="@+id/ckout"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:text="Check Out"
+        android:textSize="20dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/country"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:typeface="monospace"
+        android:text="Select Your Country"
+        android:textSize="20dp"/>
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbarSize="250dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/spin"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/roomt"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:typeface="monospace"
+        android:text="Select Room Type"
+        android:textSize="20dp"/>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spin1"
+        android:scrollbarSize="250dp"
+        android:layout_gravity="center_horizontal"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_marginTop="20dp"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+            android:hint="Adult"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold"/>
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:hint="Children"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:hint="No. of Room"
+        android:textStyle="bold"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/adult"
+            android:layout_marginLeft="10dp"
+            android:hint="0"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:inputType="number"/>
+        <EditText
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/children"
+            android:layout_marginLeft="10dp"
+            android:hint="0"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:inputType="number"/>
+        <EditText
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/room"
+            android:layout_marginLeft="10dp"
+            android:hint="0"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:inputType="number"/>
+
+    </LinearLayout>
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnc"
+        android:layout_marginTop="20dp"
+        android:hint="Calculate"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:textSize="30dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cost"
+        android:layout_marginLeft="150dp"
+        android:textSize="20dp"
+        android:layout_margin="5dp"
+        android:hint="0"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/vat"
+        android:layout_marginLeft="150dp"
+        android:textSize="20dp"
+        android:layout_margin="5dp"
+        android:hint="0"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tcost"
+        android:layout_marginLeft="150dp"
+        android:textSize="20dp"
+        android:layout_margin="5dp"
+        android:hint="0"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/nett"
+        android:layout_marginLeft="150dp"
+        android:textSize="20dp"
+        android:layout_margin="5dp"
+        android:hint="0"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/roomcost"
+        android:layout_marginLeft="150dp"
+        android:textSize="20dp"
+        android:layout_margin="5dp"
+        android:hint="0"/>
+
+
+
+</LinearLayout>
+
